@@ -1,0 +1,129 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/user-login-signup.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <title></title>
+</head>
+
+<body>
+    <div id="mySidebar" class="sidebar admin-sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="index.html"><p>Home</p></a>
+        <a href="repayment-historyPage.html"><p>Loan Repayment History</p></a>
+        <a href="admin-mark-as-verified.html"><p>All Loan application</p></a>
+        <a href="all-loan-application.html"><p>Verify Client</p></a>
+        <a href="nill-and-partial-paid-loan.html"><p>Verify Full repayment</p></a>
+        <a href="current-and-partially-paid.html"><p>All Current Loan</p></a>
+        <a href="user-loan-status.html"><p>Clients Loan Status</p></a> 
+    </div>
+
+
+    <div id="main1">
+        <div class="general-container1">
+            <button class="openbtn" onclick="openNav()">☰</button>
+            <div class="form-container form-btn login-grid register-grid">
+                <div></div>
+                <div class="login-box register-box">
+                    <h1>Apply For Loan</h1> <br>
+                    <form  class="applyForLoan">
+                        <p><label for="useremail">Email</label></p>
+                        <input type="email" name="useremail" id="useremail" class="useremail" placeholder="account email" >
+                        <span class="useremailErr"></span>
+
+                        <p><label for="amount">Amount</label></p>
+                        <input type="number" name="amount" class="amount" placeholder="Specify loan amount" min="10" >
+                        <span class="amountErr"></span>
+                        
+                        <label id="tenor">Payment Tenure</label> <br>
+                        <input type="number" name="tenor" id="" class="tenor" min="1">
+                        <!-- <select name="tenor" id="tenor" class="tenor loan-option" >
+                            <option >Select duration</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>  -->
+                        <span class="tenorErr"></span>
+                        <!-- <p class="month">Month(s)</p>  <br>
+                        <p>Interest: </p> <br>
+                        <p>Total Due:</p> <br> -->
+                        <input type="submit" name="" id="" value="Request for Loan">
+                    </form>
+                </div>
+                <div></div>
+            </div>
+            <div class="header-container" id="header">
+                <div class="logo">
+                    <img src="./images/image6.png" alt="">
+                </div>
+                <div></div>
+                <div class="nav">
+                    <a href="index.html" class="home">Home</a>
+                    <a href="user-logIn.html">Log In</a>
+                    <a href="user-signup.html">Register</a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="container8">
+            <div class="bottom2">
+                <div>
+                    <h1>Company</h1>
+                </div>
+                <div>
+                    <h1>About</h1>
+                </div>
+                <div>
+                    <h1>Contact</h1>
+                </div>
+                <div>
+                    <h1>Faq</h1>
+                </div>
+            </div>
+
+            <div class="text">
+                <h3>© QUICKLOAN Limited 2019 All rights reserved. <br> QUICKLOAN Technology Nigeria is a State Licensed
+                    Money lender with License number 0000636373057. <br> QUICKLOAN Technology Nigeria is incorporated in
+                    Nigeria (registration number 073450).
+                </h3>
+            </div>
+
+            <div class="bottom3">
+                <div>
+                    <a href="#"><img src="./images/facebook.png" alt=""></a>
+                </div>
+                <div>
+                    <a href="#"><img src="./images/instagram.png" alt=""></a>
+                </div>
+                <div>
+                    <a href="#"><img src="./images/twitter.png" alt=""></a>
+                </div>
+                <div>
+                    <a href="#"><img src="./images/youtube.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script type="text/javascript" src="index.js"></script>
+    <!-- <script src="js/generalfunction.js"></script> -->
+    <script src="js/applyforloanu.js"></script>
+    <!-- <script src="js/loanapplication.js"></script> -->
+</body>
+
+</html>

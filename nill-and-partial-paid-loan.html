@@ -1,0 +1,110 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/nill-and-partial-paid-loan.css"> 
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="dashboard-container">
+        <div class="side-menu">
+            <a href = "index.html"><img src="./images/image6.png" alt="logo"></a>
+            <nav>
+                <ul style="display: block;">
+                    <a href="index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="repayment-historyPage.html">
+                        <li>Loan Repayment History</li>
+                    </a>
+                    <a href="admin-mark-as-verified.html">
+                        <li>Verify Client</li>
+                    </a>
+                    <a href="all-loan-application.html">
+                        <li>All Loan application</li>
+                    </a>
+                    <a href="nill-and-partial-paid-loan.html">
+                        <li>Verify Full repayment</li>
+                    </a>
+                    <a href="current-and-partially-paid.html">
+                        <li>All Current Loan</li>
+                    </a>
+                    <a href="all-repaid-loans.html">
+                        <li>All Repaid Loan</li>
+                    </a>
+                    <a href="user-loan-status.html">
+                        <li>Clients Loan Status</li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="mySidebar" class="sidebar admin-sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="index.html"><p>Home</p></a>
+            <a href="repayment-historyPage.html"><p>Loan Repayment History</p></a>
+            <a href="admin-mark-as-verified.html"><p>All Loan application</p></a>
+            <a href="all-loan-application.html"><p>Verify Client</p></a>
+            <a href="nill-and-partial-paid-loan.html"><p>Verify Full repayment</p></a>
+            <a href="current-and-partially-paid.html"><p>All Current Loan</p></a>
+            <a href="user-loan-status.html"><p>Clients Loan Status</p></a>
+        </div>
+
+        <button class="openbtn" onclick="openNav()">☰</button>
+
+        <div class="loan-card">
+            <h5 class="serialNumber">1</h5>
+            <div class="email">
+                <p class="title mb-4">Email</p>
+                <h5>emmanuel@andela.com</h5>
+            </div>
+            <div class="first-name">
+                <p class="title">Full Name</p>
+                <h5>Emmanuel Okafor</h5>
+            </div>
+            <div class="repaid">
+                <p class="title">Repaid</p>
+                <h5>N20,000</h5>
+            </div>
+            <div class="balance">
+                <p class="title">balance</p>
+                <h5>N80,000</h5>
+            </div>
+
+            <div class="action">
+                <p class="title mb-4">Status</p>
+                <button class="accept">Fully Paid</button>
+            </div>
+        </div>
+
+        <div class="repayment-history-container" style=" background: white;">
+            <h1>ALL LOAN WITH NILL BALANCE & REPAID IS FALSE</h1>
+            <table>
+                <tr>
+                    <th class="text-center p-0">S/N</th>
+                    <th>Email</th>
+                    <th>Full Name</th>
+                    <th>Repaid</th>
+                    <th>Balance</th>
+                    <th class="w-25">Action</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>felixokafor46@andela.com</td>
+                    <td>Okafor felix</td>
+                    <td>20,000</td>
+                    <td>80,000</td>
+                    <td><button class="accept">Fully Paid</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>

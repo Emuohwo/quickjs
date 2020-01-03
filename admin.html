@@ -1,0 +1,112 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" href="./css/dashboard.css">
+
+    <title>Admin Dashboard</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+  <style>
+    .d-sm-block{display:none}
+  </style>
+
+  </head>
+
+<body> 
+    <div id="mySidebar" class="sidebar admin-sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="index.html"><p>Home</p></a>
+        <a href="user-logIn.html"><p>Login</p></a>
+        <a href="user-signup.html"><p>Register</p></a>
+    </div>
+
+<!--    <div class="dashboard-container">-->
+        <div class="side-menu floatLeft">
+            <a href = "index.html"><img src="./images/image6.png" alt="logo"></a>
+            <nav class="main-menu">
+                <ul style="display: block;">
+                    <a href="home-page.html">
+                        <li>HOME</li>
+                    </a>
+                    <a  class="logout">
+                        <li>LOG OUT</li>
+                    </a>
+                    <a class="active" href="apply-for-loan.html">
+                        <li>APPLY FOR LOAN</li>
+                    </a>
+                    <a class="active" href="apply-for-loan.html">
+                        <li>View all loan</li>
+                    </a>
+                    <a class="active" href="apply-for-loan.html">
+                        <li>repay FOR LOAN</li>
+                    </a>
+                </ul>
+            </nav>
+
+        </div>
+        
+
+        <button class="openbtn" onclick="openNav()">☰</button>
+
+        <div style="overflow-x:auto;" class="table-banner">
+            <div>
+                <h1>User Dashboard</h1>
+                <button class="tableContainer">Click Get Loans</button>
+            </div>
+        
+            <div>
+                <table>
+                    <tr>
+                        <th>ID</th>
+                        <th>Email</th>
+                        <th>Date Created</th>
+                        <th>Status</th>
+                        <th>Repaid</th>
+                        <th>Tenor</th>
+                        <th>Amount</th>
+                        <th>Payment <br> Installment</th>
+                        <th>Interest</th>
+                        <th>Amount</th>
+                        <th>Action</th>
+                    </tr>
+                  <tbody class="displayUserInfo">
+                    <tr ></tr>
+                  </tbody>
+                </table>
+            </div>
+          
+          </div>
+
+<!-- Dynamically generated Data from api start here -->
+<!-- <div style="overflow-x:auto;" class="table-banner"> -->
+  <!-- <div class="tableContainer"> -->
+    <!-- <div class="displayUserInfo"></div>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Email</th>
+            <th>Date Created</th>
+            <th>Status</th>
+            <th>Repaid</th>
+            <th>Tenor</th>
+            <th>Amount</th>
+            <th>Payment <br> Installment</th>
+            <th>Interest</th>
+            <th>Amount</th>
+            <th>Action</th>
+        </tr>
+    </table>
+    <button class="tableContainer">Click Get Loans</button>
+    <div class="displayUserInfo"></div>
+  </div> -->
+  
+<!-- </div> -->
+<!-- Dynamically generated Data from api ends here -->
+<script type="text/javascript" src="index.js"></script>
+    <script src="js/generalfunction.js"></script>
+    <script src="js/admin.js"></script>
+</body>
+
+</html>

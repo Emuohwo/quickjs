@@ -1,0 +1,127 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/all-loan-application.css">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+</head>
+
+<body>
+    <div class="dashboard-container">
+        <div class="side-menu">
+            <a href = "index.html"><img src="./images/image6.png" alt="logo"></a>
+            <nav class="main-menu">
+                <ul style="display: block;">
+                    <a href="home-page.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="repayment-historyPage.html">
+                        <li>Loan Repayment History</li>
+                    </a>
+                    <a href="admin-mark-as-verified.html">
+                        <li>Verify Client</li>
+                    </a>
+                    <a href="all-loan-application.html">
+                        <li>All Loan application</li>
+                    </a>
+                    <a href="nill-and-partial-paid-loan.html">
+                        <li>Verify Full repayment</li>
+                    </a>
+                    <a href="current-and-partially-paid.html">
+                        <li>All Current Loan</li>
+                    </a>
+                    <a href="all-repaid-loans.html">
+                        <li>All Repaid Loan</li>
+                    </a>
+                    <a href="user-loan-status.html">
+                        <li>Clients Loan Status</li>
+                    </a>
+                </ul>
+        </div>
+
+        <div id="mySidebar" class="sidebar admin-sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="index.html"><p>Home</p></a>
+            <a href="repayment-historyPage.html"><p>Loan Repayment History</p></a>
+            <a href="admin-mark-as-verified.html"><p>All Loan application</p></a>
+            <a href="all-loan-application.html"><p>Verify Client</p></a>
+            <a href="nill-and-partial-paid-loan.html"><p>Verify Full repayment</p></a>
+            <a href="current-and-partially-paid.html"><p>All Current Loan</p></a>
+            <a href="user-loan-status.html"><p>Clients Loan Status</p></a>
+        </div>
+
+        <button class="openbtn" onclick="openNav()">☰</button>
+
+        <div class="loan-card">
+            <h5 class="serialNumber">1</h5>
+            <h5 class="card-header">ALL LOAN APPLICATION</h5>
+            <div class="nameEmail">
+                <p class="title mb-4">Name/Email</p>
+                <h5>Emmanuel Okafor</h5>
+                <p>emmanuel@andela.com</p>
+            </div>
+            <div class="amount">
+                <p class="title">Amount</p>
+                <h5>N100,000</h5>
+            </div>
+            <div class="status">
+                <p class="title">Status</p>
+                <h5>Pending</h5>
+            </div>
+
+            <div class="action">
+                <p class="title mb-4">Status</p>
+                <button class="accept">Accept</button> <button class="reject">Reject</button>
+            </div>
+        </div>
+
+        <div class="repayment-history-container">
+            <h1>ALL LOAN APPLICATION</h1>
+            <table>
+                <tr>
+                    <th class="text-center p-0">S/N</th>
+                    <th>Name / Email</th>
+                    <th>Amount</th>
+                    <th>Status</th>
+                    <th class="w-25">Action</th>
+                </tr>
+                <tr>
+                    <td class="text-center">1</td>
+                    <td>
+                        <h5>Emmanuel Okafor</h5>
+                        <p>emmanuel@andela.com</p>
+                    </td>
+                    <td>
+                        <h5>N100,000</h5>
+                    </td>
+                    <td>
+                        <h5>Pending</h5>
+                    </td>
+                    <td><button class="accept">Accept</button> <button class="reject">Reject</button></td>
+                </tr>
+                <tr>
+                    <td class="text-center">1</td>
+                    <td>
+                        <h5>Emmanuel Okafor</h5>
+                        <p>emmanuel@andela.com</p>
+                    </td>
+                    <td>
+                        <h5>N100,000</h5>
+                    </td>
+                    <td>
+                        <h5>Pending</h5>
+                    </td>
+                    <td><button class="accept">Accept</button> <button class="reject">Reject</button></td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>
+

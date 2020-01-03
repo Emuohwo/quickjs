@@ -1,0 +1,406 @@
+ 
+
+
+body {
+    margin: auto;
+    max-width: 1720px;
+    background-image: url("./images/image1b.jpg");
+    background-repeat: no-repeat;
+    background-position: cover;
+    background-size: 100%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.main-container {
+    max-width: 100%;
+ }
+
+
+.header-container {
+    display: flex;
+    justify-content: flex-start;
+    border: 1px solid black;
+}
+
+.header-container .home {
+    margin-left: auto;
+    padding-top: 50px;
+}
+
+
+
+.header-container > .login, .register {
+    margin-left: 50px; 
+    padding-top: 50px;
+    padding-right: 20px;
+}
+
+
+.container1 {
+    display: flex;
+    text-align: center;
+    
+}
+
+
+
+
+
+/* CSS Styling for form container */
+
+.form-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+div h1 {
+    font-size: 22px;
+     text-align: center; 
+     padding: 0 0 20px; 
+     margin: 0;
+}
+
+.login-box {
+    width: 460px;
+    background: #79e44b;
+    color: black;
+    top: 62%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -60%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    opacity: 1.0;
+    border-radius: 10px;
+}
+
+
+.login-box input {
+    margin-bottom: 15px;
+}
+
+.login-box select {
+    width: 50%;
+    margin-bottom: 15px;
+    height: 25px;
+    background:black;
+    color: white;
+    font-size: 70%;
+}
+
+.login-box input[type="text"], input[type="email"], input[type="first-name"],
+input[type="last-name"], input[type="address"], input[type="password"] {
+    border: none;
+    border-bottom: 2px solid black;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    font-size: 16px;
+}
+
+
+.login-box input[type="submit"] {
+    border: none;
+    outline: none;
+    color: white;
+    background-color: black;
+    height: 50px;
+    font-size: 16px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+
+
+@media (max-width: 1024px){
+
+    /*Form Style Begin*/
+
+    .form-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    
+    }
+    
+    div h1 {
+        font-size: 20px;
+         text-align: center; 
+         padding: 0 0 20px; 
+         margin: 0;
+    }
+
+    .login-box {
+        width: 49%;
+        background: #79e44b;
+        color: black;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        box-sizing: border-box;
+        padding: 30px 15px;
+        opacity: 1.0;
+        border-radius: 10px;
+    }
+    
+    
+    .login-box input {
+        margin-bottom: 20px;
+    }
+    
+    .login-box select {
+        width: 50%;
+        margin-bottom: 15px;
+        height: 25px;
+        background:black;
+        color: white;
+        font-size: 70%;
+    }
+    
+    .login-box input[type="text"], input[type="email"], input[type="first-name"],
+    input[type="last-name"], input[type="address"], input[type="password"] {
+        border: none;
+        border-bottom: 2px solid black;
+        background: transparent;
+        outline: none;
+        height: 30px;
+        width: 100%;
+        font-size: 15px;
+        color: #ffffff;
+    }
+    
+    
+    .login-box input[type="submit"] {
+        border: none;
+        outline: none;
+        color: white;
+        background-color: black;
+        height: 30px;
+        font-size: 14px;
+        width: 98%;
+        border-radius: 10px;
+    }
+    
+
+
+    /*Form Style Ends*/
+
+    .header-container {
+        display: flex;
+        justify-content: flex-start;
+        border: 1px solid black;
+        font-size: 85%;
+    }
+    
+    .header-container .home {
+        margin-left: auto;
+        padding-top: 35px;
+    }
+    
+    
+    
+    .header-container > .login, .register {
+        margin-left: 20px; 
+        padding-top: 35px;
+        padding-right: 8px;
+    }
+    
+
+
+}
+
+@media (max-width: 768px){
+
+    /*Form Style Begin*/
+
+    .login-box {
+        width: 49%;
+        background: #79e44b;
+        color: black;
+        position: absolute;
+        transform: translate(-50%, -150%);
+        box-sizing: border-box;
+        padding: 30px 15px;
+        opacity: 1.0;
+        border-radius: 10px;
+    }
+    
+    
+    .login-box input {
+        margin-bottom: 20px;
+    }
+    
+    .login-box select {
+        width: 50%;
+        margin-bottom: 15px;
+        height: 25px;
+        background:black;
+        color: white;
+        font-size: 70%;
+    }
+    
+    .login-box input[type="text"], input[type="email"], input[type="first-name"],
+    input[type="last-name"], input[type="address"], input[type="password"] {
+        border: none;
+        border-bottom: 2px solid black;
+        background: transparent;
+        outline: none;
+        height: 30px;
+        width: 100%;
+        font-size: 15px;
+        color: #ffffff;
+    }
+    
+    
+    .login-box input[type="submit"] {
+        border: none;
+        outline: none;
+        color: white;
+        background-color: black;
+        height: 30px;
+        font-size: 14px;
+        width: 98%;
+        border-radius: 10px;
+    }
+    
+
+
+    /*Form Style Ends*/
+    
+
+
+}
+
+@media (max-width: 1000px){
+    .login-box {
+        width: 49%;
+        background: #79e44b;
+        color: black;
+        position: absolute;
+        transform: translate(-50%, -55%);
+        box-sizing: border-box;
+        padding: 30px 15px;
+        opacity: 1.0;
+        border-radius: 10px;
+    }
+
+}
+
+@media (max-width: 760px){
+
+    /*Form Style Begin*/
+
+    .form-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    
+    }
+    
+    div h1 {
+        font-size: 20px;
+         text-align: center; 
+         padding: 0 0 20px; 
+         margin: 0;
+    }
+
+    .login-box {
+        width: 70%;
+        background: #79e44b;
+        color: black;
+        position: absolute;
+        transform: translate(-50%, -55%);
+        box-sizing: border-box;
+        padding: 30px 15px;
+        opacity: 1.0;
+        border-radius: 10px;
+    }
+    
+    
+    .login-box input {
+        margin-bottom: 20px;
+    }
+    
+    .login-box select {
+        width: 50%;
+        margin-bottom: 15px;
+        height: 25px;
+        background:black;
+        color: white;
+        font-size: 70%;
+    }
+    
+    .login-box input[type="text"], input[type="email"], input[type="first-name"],
+    input[type="last-name"], input[type="address"], input[type="password"] {
+        border: none;
+        border-bottom: 2px solid black;
+        background: transparent;
+        outline: none;
+        height: 30px;
+        width: 100%;
+        font-size: 15px;
+        color: #ffffff;
+        
+    }
+    
+    
+    .login-box input[type="submit"] {
+        border: none;
+        outline: none;
+        color: white;
+        background-color: black;
+        height: 30px;
+        font-size: 14px;
+        width: 98%;
+        border-radius: 10px;
+        
+    }
+    
+
+
+    /*Form Style Ends*/
+
+    .header-container {
+        display: flex;
+        justify-content: flex-start;
+        border: 1px solid black;
+        font-size: 85%;
+    }
+    
+    .header-container .home {
+        margin-left: auto;
+        padding-top: 35px;
+    }
+    
+    
+    
+    .header-container > .login, .register {
+        margin-left: 20px; 
+        padding-top: 35px;
+        padding-right: 8px;
+    }
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
